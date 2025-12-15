@@ -1,0 +1,129 @@
+:root {
+    --blue-main: #0d6efd;
+    --blue-dark: #003d99;
+    --blue-light: #eaf3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+    background: var(--blue-light);
+    color: #333;
+}
+
+/* NAVBAR */
+header {
+    background: linear-gradient(90deg, var(--blue-main), var(--blue-dark));
+    padding: 15px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background: url('../images/hero.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* SECTION */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* HEADINGS */
+h2 {
+    color: var(--blue-dark);
+    margin-bottom: 20px;
+}
+
+/* LISTS */
+ul, ol {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+    background: var(--blue-dark);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* LOGIN */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--blue-light);
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: var(--blue-main);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: var(--blue-dark);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    .login-container {
+        width: 90%;
+    }
+}
