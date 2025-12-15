@@ -60,6 +60,25 @@
 <footer>
     <p>© 2025 DigitalMarketing.ID | All Rights Reserved</p>
 </footer>
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
 
+    if(localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        toggleBtn.textContent = '☀️';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        if(body.classList.contains('dark-mode')) {
+            toggleBtn.textContent = '☀️';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            toggleBtn.textContent = '🌙';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
 </body>
 </html>
