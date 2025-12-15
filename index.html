@@ -11,6 +11,7 @@
 <section class="login-section">
     <div class="login-container">
         <h2>Login Akun</h2>
+
         <!-- Tombol Dark/Light Mode -->
         <button id="theme-toggle">🌙</button>
 
@@ -33,7 +34,6 @@
 
     toggleBtn.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
-
         if(body.classList.contains('dark-mode')) {
             toggleBtn.textContent = '☀️';
             localStorage.setItem('theme', 'dark');
