@@ -12,6 +12,11 @@
 }
 
 /* BODY */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
 /* DARK MODE VARIABEL */
 body.dark-mode {
     --bg-color: #121212;
