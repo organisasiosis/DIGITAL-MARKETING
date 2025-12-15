@@ -17,11 +17,9 @@
             <a href="#tips">Tips Praktis</a>
             <a href="index.html">Logout</a>
         </nav>
-        <!-- Tombol Dark/Light Mode -->
         <button id="theme-toggle">🌙</button>
     </div>
 </header>
-
 
 <!-- HERO -->
 <section class="hero">
@@ -37,10 +35,10 @@
 <section id="strategi">
     <h2>Strategi Utama Digital Marketing</h2>
     <ul>
-        <li>📈 <strong>Search Engine Optimization (SEO)</strong> - Optimasi website agar muncul di Google dan menarik traffic organik.</li>
-        <li>📱 <strong>Social Media Marketing</strong> - Membuat konten menarik & rutin di Instagram, TikTok, Facebook untuk meningkatkan engagement.</li>
-        <li>💌 <strong>Email Marketing</strong> - Mengirim email promosi yang relevan untuk membangun hubungan dengan pelanggan.</li>
-        <li>📊 <strong>Content Marketing</strong> - Membuat artikel, video, atau infographic yang edukatif dan relevan dengan target audience.</li>
+        <li>📈 <strong>SEO</strong> - Optimasi website agar muncul di Google dan menarik traffic organik.</li>
+        <li>📱 <strong>Social Media Marketing</strong> - Membuat konten menarik & rutin di Instagram, TikTok, Facebook.</li>
+        <li>💌 <strong>Email Marketing</strong> - Mengirim email promosi yang relevan.</li>
+        <li>📊 <strong>Content Marketing</strong> - Membuat artikel, video, infografik edukatif.</li>
         <li>💰 <strong>Paid Ads</strong> - Iklan berbayar di Google Ads atau media sosial untuk mempercepat konversi.</li>
     </ul>
 </section>
@@ -50,7 +48,7 @@
     <h2>Tips Praktis Meningkatkan Digital Marketing</h2>
     <ol>
         <li>Kenali target pasar dan buat persona pelanggan.</li>
-        <li>Gunakan tools analytics untuk mengevaluasi performa.</li>
+        <li>Gunakan tools analytics untuk evaluasi performa.</li>
         <li>Posting konten berkualitas secara konsisten.</li>
         <li>Gunakan visual yang menarik (gambar, video, infografik).</li>
         <li>Selalu tes A/B untuk menemukan strategi terbaik.</li>
@@ -60,6 +58,7 @@
 <footer>
     <p>© 2025 DigitalMarketing.ID | All Rights Reserved</p>
 </footer>
+
 <script>
     const toggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
@@ -71,6 +70,7 @@
 
     toggleBtn.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
+
         if(body.classList.contains('dark-mode')) {
             toggleBtn.textContent = '☀️';
             localStorage.setItem('theme', 'dark');
@@ -80,5 +80,6 @@
         }
     });
 </script>
+
 </body>
 </html>
