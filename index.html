@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Marketing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOGIN PAGE -->
+  <div id="loginPage" class="center">
+    <div class="login-box">
+      <img src="hero.jpg" alt="Ilustrasi Digital Marketing">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Masuk</button>
+      <p id="loginMsg"></p>
+    </div>
+  </div>
+
+  <!-- MAIN PAGE -->
+  <div id="mainPage" class="hidden">
+    <header>
+      <h1>Digital Marketing</h1>
+      <div>
+        <button onclick="toggleDark()">🌙 Dark Mode</button>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2>Apa itu Digital Marketing?</h2>
+      <p>
+        Digital marketing adalah strategi pemasaran menggunakan media digital
+        seperti website, media sosial, SEO, dan iklan online.
+      </p>
+
+      <h2>Bidang Digital Marketing</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>SEO</h3>
+          <p>Optimasi website agar muncul di mesin pencari.</p>
+        </div>
+        <div class="card">
+          <h3>Social Media Marketing</h3>
+          <p>Pemasaran melalui Instagram, TikTok, dan Facebook.</p>
+        </div>
+        <div class="card">
+          <h3>Content Marketing</h3>
+          <p>Membuat konten menarik untuk brand.</p>
+        </div>
+        <div class="card">
+          <h3>Email Marketing</h3>
+          <p>Promosi produk melalui email.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      © 2025 Digital Marketing Website
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
